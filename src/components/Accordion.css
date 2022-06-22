@@ -1,0 +1,58 @@
+
+/* for the accordion whole section */
+.accordion--fullsection{
+    display: flex;
+    flex-direction: column;
+}
+
+/* buttons used to open and close the panel */
+.accordion{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+}
+
+/* add background color to the button if clicked (add .active class on the js), and when over it, use :hover too*/
+.accordion:hover,
+.active{
+    background-color: #ccc;
+}
+
+/* accordion title */
+.accordion--title{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* accordion chevron icon */
+.accordion--icon{
+    width: 30px;
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+/* style to rotate icon when state is active */
+.rotate{
+    transform: rotate(90deg);
+}
+
+/* accordion content panel, hidden by default */
+.accordion--content{
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    max-height: 0;
+}
+
+/* accordion text */
+.accordion--text{
+    font-weight: 400;
+    font-size: 14;
+    padding: 18;
+}
